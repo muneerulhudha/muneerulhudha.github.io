@@ -1,0 +1,274 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(http://db.onlinewebfonts.com/c/3b3b082a801480b3b04d8076af47b4c1?family=LuminariW01-Regular);
+
+@font-face {
+    font-family: 'customFont';
+    src: url('../fonts/Montserrat-Light.otf'); 
+}
+
+@font-face {
+    font-family: 'customFont';
+    src: url('../fonts/Montserrat-Bold.otf'); 
+    font-weight: bold;
+}
+
+/*.bodyContainer{
+   background-color: #000000; 
+   height: 100%;
+   width: auto;
+   background-image:url(../images/Homepage-image.jpg);/*your background image 
+   background-repeat:no-repeat;/*we want to have one single image not a repeated one
+   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/  
+   /*css hack for ie     
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Homepage-image.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Homepage-image.jpg',sizingMethod='scale')";
+}*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+  background: white;
+}
+
+.contact {
+  text-align: center;
+  font-family: 'customFont';
+  font-size: 15px;
+}
+
+#portfolio {
+  overflow-y: auto;
+  padding-bottom: 30px;
+  height: 80vh;
+}
+
+.portfolio{
+  text-align: center;
+  font-family: 'customFont';
+  font-size: 15px;
+}
+
+.port-logo {
+  vertical-align: top;
+  text-align: center;
+}
+
+.port-content{
+  padding-right: 20px;
+  padding-left: 12px;
+  font-family: 'customFont';
+  font-size: 15px;
+  text-align: justify;
+  vertical-align: middle;
+}
+
+.eduTable {
+  width: 100%;
+}
+
+.eduTable td {
+  padding-right: 20px;
+  padding-left: 12px;
+  font-family: 'customFont';
+  vertical-align:top;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.eduTable dt {
+  font-weight: 100;
+}
+
+.resume{
+  font-family: 'customFont';
+  color: #000000;
+}
+
+.col-heading {
+    text-align: right;
+    font-size: 14px;
+    color: #ff5251;
+    font-weight: bold;
+    font-family: 'customFont';
+    text-transform: uppercase;
+}
+
+.col-content {
+  font-family: 'customFont';
+  color: #000000;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.homePage {
+  text-align: center;
+  float: left;
+  /*max-height: 70vh;*/
+  width: 100%;
+}
+
+.homePage img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
+#resumeFooter {
+  text-align: center;
+  font-family: 'customFont';
+  font-size: 15px;
+}
+
+#logoblock {
+  width: 400px;
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+#logoblock h2 {
+  color: #ff5251;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  border-top-style: groove;
+  background: #ffffff;
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.footer span{
+  float: right;
+}
+
+#cssmenu {
+  margin-top: 15px;
+  background: #ffffff;
+  width: auto;
+  float: right;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #ff5251;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #ff5251;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #ff5251;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+}

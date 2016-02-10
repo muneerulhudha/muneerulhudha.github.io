@@ -53,6 +53,13 @@ body {
   font-size: 15px;
 }
 
+.resume {
+  height: 75vh; 
+  overflow-y: auto; 
+  overflow-x: hidden;
+  padding-bottom: 30px;
+}
+
 .port-logo {
   vertical-align: top;
   text-align: center;

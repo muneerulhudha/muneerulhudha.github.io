@@ -90,6 +90,11 @@ body {
   text-align: Left;
 }
 
+.assignGeo p{
+  padding-left: 150px;
+  text-align: Left;
+}
+
 .contact {
   text-align: center;
   font-family: 'customFont';

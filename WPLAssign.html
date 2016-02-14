@@ -181,7 +181,21 @@
 
 			<p><button onclick="getLocation()" class="btn btn-primary">Click here to get location</button></p>
 			<p id="demo">This text will be replaced by the co-ordinates.</p>
-			<p> It takes a while for the loction to be fetched. Please stay patient. </p>
+			<p> It takes a while for the location to be fetched. Please stay patient. </p>
+
+  		</section>
+
+  		<section class="dragAndDrop">
+  			<h2> Drag and Drop API </h2>
+  			<p>Drag the Baymax into the rectangle:</p>
+
+  			<div class="container">
+  				<div class="col-md-4">
+  					<img id="drag1" src="images/baymax.jpg" draggable="true" ondragstart="drag(event)" width="320" height="427" />
+  				</div>
+  				<div class="col-md-4" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  				</div>
+  			</div>
 
   		</section>
 

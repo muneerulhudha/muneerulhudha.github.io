@@ -95,6 +95,20 @@ body {
   text-align: Left;
 }
 
+.dragAndDrop {
+  padding-left: 100px;
+  text-align: Left;
+}
+
+#div1 {
+  width: 350px;
+  height: 450px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  float: left;
+}
+
+
 .contact {
   text-align: center;
   font-family: 'customFont';

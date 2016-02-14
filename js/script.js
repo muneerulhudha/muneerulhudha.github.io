@@ -35,3 +35,14 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 }
+
+function getName() {
+	if (typeof(Storage) !== "undefined") {
+    	// Store
+    	localStorage.setItem("name", "Muneer Hudha");
+    	// Retrieve
+    	document.getElementById("result").innerHTML = localStorage.getItem("name");
+	} else {
+    	document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+	}
+}

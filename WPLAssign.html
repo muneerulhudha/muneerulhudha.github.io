@@ -11,7 +11,7 @@
 
 	<!-- Custom Scripts and Style Sheets -->
 	<script type="text/javascript" src="js/script.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/firststyle.css" />
 
 </head>
 <body> 	
@@ -22,7 +22,7 @@
 			</div>
 		    <div class="col-md-6" id='cssmenu'>
 				<ul>
-				   <li class='active'><a href='index.html' onClick=""><span>Home</span></a></li>
+				   <li class=''><a href='index.html' onClick=""><span>Home</span></a></li>
 				   <li><a href='portfolio.html' onClick=""><span>Portfolio</span></a></li>
 				   <li><a href='resume.html' onClick=""><span>Resume</span></a></li>
 				   <li class='last'><a href='contact.html' onClick=""><span>Contact</span></a></li>
@@ -31,7 +31,7 @@
 		</div>
   	</header>
   	
-  	<main class="assignMain">
+  	<main class="assignMain" id="mainContainer">
   		<section class="orderedList">
   			<h2>Ordered List</h2>
   			<ol>
@@ -41,7 +41,7 @@
   			</ol>
   		</section>
 
-  		<section class="assignTable">
+  		<section class="container" id="assignTable">
   			<h2>Table</h2>
   			<table>
   				<tr>
@@ -190,10 +190,22 @@
   			<p>Drag the Baymax into the rectangle:</p>
 
   			<div class="container">
-  				<div class="col-md-4">
+  				<div class="col-md-4" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
   					<img id="drag1" src="images/baymax.jpg" draggable="true" ondragstart="drag(event)" width="320" height="427" />
   				</div>
   				<div class="col-md-4" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  				</div>
+  			</div>
+
+  		</section>
+  		
+  		<section class="storage">
+  			<h2> Storage API </h2>
+  			<div class="container">
+  				<div class="col-md-4">
+  					<button class="btn btn-primary" onClick="getName()">Whats my name?</button>
+  				</div>
+  				<div class="col-md-4" id="result">
   				</div>
   			</div>
 

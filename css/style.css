@@ -31,6 +31,65 @@ body {
   background: white;
 }
 
+.assignMain {
+  overflow-y: auto;
+  padding-bottom: 30px;
+  max-height: 100%;
+  overflow-x: hidden;
+  margin-left: -10px;
+  font-family: 'customFont';
+  font-size: 15px;
+}
+
+.orderedList h2 {
+  padding-left: 100px;
+  text-align: Left;
+}
+
+.orderedList ol {
+  padding-left: 150px;
+  text-align: Left;
+}
+
+.assignTable h2 {
+  padding-left: 100px;
+  text-align: Left;
+}
+
+.assignTable{
+  width: 100%;
+}
+
+.assignTable table {
+  margin-left: 150px;
+}
+
+.assignTable th, td {
+  width: 150px;
+}
+
+.assignTable > table {
+  font-family: 'customFont';
+  vertical-align:top;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.assignTable td, th{
+  border: 1px solid gray;
+}
+
+
+.assignForm {
+  padding-left: 100px;
+  text-align: Left;
+}
+
+.assignGeo {
+  padding-left: 100px;
+  text-align: Left;
+}
+
 .contact {
   text-align: center;
   font-family: 'customFont';

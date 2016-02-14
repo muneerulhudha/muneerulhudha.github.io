@@ -22,7 +22,7 @@
 			</div>
 		    <div class="col-md-6" id='cssmenu'>
 				<ul>
-				   <li class='active'><a href='#' onClick=""><span>Home</span></a></li>
+				   <li class='active'><a href='index.html' onClick=""><span>Home</span></a></li>
 				   <li><a href='portfolio.html' onClick=""><span>Portfolio</span></a></li>
 				   <li><a href='resume.html' onClick=""><span>Resume</span></a></li>
 				   <li class='last'><a href='contact.html' onClick=""><span>Contact</span></a></li>
@@ -31,11 +31,161 @@
 		</div>
   	</header>
   	
-  	<div class = "mainContainer">
-	  	<div class = "homePage" id = "homePage">
-	  		<img src="images/Masthead.jpg" />
-	  	</div>
-  	</div>
+  	<main class="assignMain">
+  		<section class="orderedList">
+  			<h2>Ordered List</h2>
+  			<ol>
+  				<li>Hi!</li>
+  				<li>I am ordered list</li>
+  				<li>I am numbered</li>
+  			</ol>
+  		</section>
+
+  		<section class="assignTable">
+  			<h2>Table</h2>
+  			<table>
+  				<tr>
+  					<th>Column1</th>
+  					<th>Column2</th>
+  					<th>Column3</th>
+  				</tr>
+  				<tr>
+  					<td>Row1</td>
+  					<td>Row1</td>
+  					<td>Row1</td>
+  				</tr>
+  				<tr>
+  					<td>Row2</td>
+  					<td>Row2</td>
+  					<td>Row2</td>
+  				</tr>
+  				<tr>
+  					<td>Row3</td>
+  					<td>Row3</td>
+  					<td>Row3</td>
+  				</tr>
+  			</table>
+  		</section>
+
+  		<section class="assignForm">
+  			<h2>Form</h2>
+  			<form class="form-horizontal">
+			<fieldset>
+
+			<!-- Form Name -->
+			<legend>HTML 5 Form</legend>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="plaintext">Plain Text Box</label>  
+			  <div class="col-md-4">
+			  	<input id="plaintext" name="plaintext" type="text" placeholder="Enter some text" class="form-control input-md" />
+			    
+			  </div>
+			</div>
+
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="plaintext">Email input</label>  
+			  <div class="col-md-4">
+			  	<input type="email" name="email" placeholder="Enter a valid email address" class="form-control input-md" />
+			  	<span class="help-block">Try submitting without a valid email</span> 
+			  </div>
+			</div>			
+
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="plaintext">Website</label>  
+			  <div class="col-md-4">
+			  	<input type="url" name="website" placeholder="Enter a URL" class="form-control input-md" />
+			  	<span class="help-block">Try submitting without a valid URL</span> 
+			  </div>
+			</div>
+
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="plaintext">Age</label>  
+			  <div class="col-md-4">
+			  	<input type="number" size="6" name="age" min="18" max="25" class="form-control input-md" />
+			  	<span class="help-block">Age must be between 18 and 25</span> 
+			  </div>
+			</div>
+
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="plaintext">Slider</label>  
+			  <div class="col-md-4">
+			  	<input type="range" size="2" name="satisfaction" min="1" max="5" value="3" />
+			  	<span class="help-block">Range input type! 1 to 5</span> 
+			  </div>
+			</div>
+
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="plaintext">Color picker</label>  
+			  <div class="col-md-4">
+			  	<input type="color" name="color" />
+			  	<span class="help-block">Color</span> 
+			  </div>
+			</div>
+
+
+			<!-- Multiple Checkboxes -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="checkboxes">Checkbox</label>
+			  <div class="col-md-4">
+			  <div class="checkbox">
+			    <label for="checkboxes-0">
+			      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+			      Option one
+			    </label>
+				</div>
+			  <div class="checkbox">
+			    <label for="checkboxes-1">
+			      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+			      Option two
+			    </label>
+				</div>
+			  </div>
+			</div>
+
+			<!-- Multiple Radios -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="radios">Radio Buttons</label>
+			  <div class="col-md-4">
+			  <div class="radio">
+			    <label for="radios-0">
+			      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+			      Option one
+			    </label>
+				</div>
+			  <div class="radio">
+			    <label for="radios-1">
+			      <input type="radio" name="radios" id="radios-1" value="2">
+			      Option two
+			    </label>
+				</div>
+			  </div>
+			</div>
+
+			<!-- Button -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="button"></label>
+			  <div class="col-md-4">
+			  	<button id="button" value="Submit" type="submit" class="btn btn-primary">Submit</button>
+			    <button id="button" value="Reset" type="reset" class="btn btn-warning">Reset</button>
+			  </div>
+			</div>
+
+			</fieldset>
+			</form>
+  		</section>
+
+  		<section class="assignGeo">
+  			<h2> GeoLocation API </h2>
+
+  			<p id="demo">Click the button to get your coordinates:</p>
+
+			<button onclick="getLocation()" class="btn btn-primary">Try It</button>
+
+  		</section>
+
+  	</main>
 
   	<footer class = "footer">
   		<div class= "container">

@@ -10,11 +10,41 @@
 
 	<title>Happy Birthday Khaviyaa!</title>
 
-	<!-- CSS -->
 	<link href="main.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">	
 
+	<script src="js/jquery.min.js"></script>
+	<script src="js/two.min.js"></script>
+	<script src="js/underscore.min.js"></script>
+	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='js/svg-inline-min.js'></script>
+    <style>
+	    #shapes * {
+	      visibility: hidden;
+	      pointer-events: none;
+	      position: absolute;
+	      top: -13337px;
+	      left: -2000px;
+	    }
+	    #background {
+	      z-index: -1;
+	      position: fixed;
+	      top: 0;
+	      left: 0;
+	      width: 100%;
+	      height: 100%;
+	    }
+	    #background:after {
+	      content: "";
+	      position: fixed;
+	      background: rgba(255,255,255,0.2);
+	      top: 0;
+	      left: 0;
+	      width: 100%;
+	      height: 100%;
+	    }
+    </style>
 
 </head>
 
@@ -28,6 +58,20 @@
 		</div>
 	</header>
 
+
+	<!-- SVG CODE START-->
+	<div id="shapes">
+	    <object type="image/svg+xml" data="svg/stars.svg"></object>
+	    <object type="image/svg+xml" data="svg/heart.svg"></object>
+	    <object type="image/svg+xml" data="svg/rainbow.svg"></object>
+	    <object type="image/svg+xml" data="svg/tiara.svg"></object>
+	    <object type="image/svg+xml" data="svg/cake.svg"></object>
+	    <object type="image/svg+xml" data="svg/balloon.svg"></object>
+	</div>
+
+	<div id="background"></div>
+
+	<!-- SVG CODE END -->
 
 
 	<!-- Enable MaxWidth Switching -->
@@ -116,6 +160,9 @@
 		<div>
 
 	</footer>
+
+	<script src="js/javascript.js"></script>
+
 	
 </body>
 </html>
